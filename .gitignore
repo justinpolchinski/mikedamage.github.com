@@ -2,3 +2,6 @@
 ._*
 *~
 *.tmproj
+.sass-cache
+*.vimsession
+*.vim
