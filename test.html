@@ -3,6 +3,19 @@ layout: default
 title: "Web Developer, Programmer, Renaissance Man"
 ---
 
-<p>
-	Lorem ipsum dolor sit amet.
-</p>
+<div class="home" id="main">
+	<h2>Test Page</h2>
+	<p>Lorem ipsum dolor sit amet</p>
+
+	{% highlight ruby %}
+	def say_hello(msg="World")
+	  puts "Hello, #{msg}"
+	end
+	{% endhighlight %}
+
+	{% highlight javascript %}
+	$(document).ready(function() {
+	  $('.foo').html('Bar');
+	});
+	{% endhighlight %}
+</div>
