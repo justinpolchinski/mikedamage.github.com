@@ -6,3 +6,5 @@
 *.vimsession
 *.vim
 Thorfile
+_site
+_drafts
