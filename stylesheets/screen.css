@@ -440,6 +440,11 @@ body.bp .removed {
   background: #990000;
   color: white;
 }
+/* line 26, ../sass/screen.sass */
+body.bp h1 {
+  font-family: VollkornBold;
+  font-size: 28px;
+}
 
 /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp label {
@@ -503,14 +508,14 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 30, ../sass/screen.sass */
+/* line 36, ../sass/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 32, ../sass/screen.sass */
+/* line 38, ../sass/screen.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -521,7 +526,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 34, ../sass/screen.sass */
+/* line 40, ../sass/screen.sass */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -532,7 +537,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 38, ../sass/screen.sass */
+/* line 44, ../sass/screen.sass */
 body.two-col #content {
   display: inline;
   float: left;

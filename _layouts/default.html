@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="The personal homepage of Mike Green, aka The Judeo-Piston. Mike is a web developer, programmer, musician, and Renaissance Man. A jack of all trades, master of none." />
     <meta name="keywords" content="web development, programming, music, politics, skepticism, politics, opinion" />
-    <title>Mike Green, aka The Judeo-Piston: Web Developer, Programmer, Renaissance Man</title>
+	<title>Mike Green, aka the Judeo-Piston: {{ page.title }}</title>
 
     <link media="screen, projection" href="stylesheets/screen.css" type="text/css" rel="stylesheet" />
     
@@ -18,15 +18,15 @@
     	<link media="screen, projection" href="stylesheets/ie.css" type="text/css" rel="stylesheet" />
     <![endif]-->
 </head>
-<body>
+<body class="bp">
 	
 	<div id="container">
 		<header>
-		
+			<h1>Mike Green</h1>
 		</header>
 
 		<div id="main">
-		
+			{{ content }}
 		</div>
 		
 		<footer>
