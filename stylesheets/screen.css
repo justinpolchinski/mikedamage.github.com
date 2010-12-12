@@ -139,6 +139,7 @@ body.bp {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333333;
   font-size: 75%;
+  font-family: Georgia;
 }
 /* line 68, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {
@@ -440,23 +441,33 @@ body.bp .removed {
   background: #990000;
   color: white;
 }
-/* line 25, ../sass/screen.sass */
+/* line 28, ../sass/screen.sass */
 body.bp #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 29, ../sass/screen.sass */
+/* line 32, ../sass/screen.sass */
 body.bp #container header h1 {
   font-family: VollkornBoldItalic;
   font-size: 36px;
 }
-/* line 35, ../sass/screen.sass */
+/* line 38, ../sass/screen.sass */
+body.bp #container #main h2 {
+  font-family: VollkornItalic;
+  font-size: 26px;
+}
+/* line 42, ../sass/screen.sass */
+body.bp #container #main h3 {
+  font-family: VollkornItalic;
+  font-size: 18px;
+}
+/* line 47, ../sass/screen.sass */
 body.bp #container #main div.highlight {
   background: none;
 }
-/* line 38, ../sass/screen.sass */
+/* line 50, ../sass/screen.sass */
 body.bp #container #main div.highlight pre {
   font-family: DroidSansMonoRegular;
   font-size: 14px;
@@ -524,14 +535,14 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 48, ../sass/screen.sass */
+/* line 60, ../sass/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 50, ../sass/screen.sass */
+/* line 62, ../sass/screen.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -542,7 +553,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 52, ../sass/screen.sass */
+/* line 64, ../sass/screen.sass */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -553,7 +564,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 56, ../sass/screen.sass */
+/* line 68, ../sass/screen.sass */
 body.two-col #content {
   display: inline;
   float: left;
