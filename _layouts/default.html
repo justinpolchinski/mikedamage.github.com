@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="The personal homepage of Mike Green, aka The Judeo-Piston. Mike is a web developer, programmer, musician, and Renaissance Man. A jack of all trades, master of none." />
-    <meta name="keywords" content="web development, programming, music, politics, skepticism, politics, opinion" />
-	<title>Mike Green, aka the Judeo-Piston: {{ page.title }}</title>
+
+    {% if page.description %}
+		<meta name="description" content="{{ page.description }}" />
+    {% else %}
+		<meta name="description" content="The personal homepage of Mike Green, aka The Judeo-Piston. Mike is a web developer, programmer, musician, and Renaissance Man. A jack of all trades, master of none." />
+    {% endif %}
+
+	{% if page.keywords %}
+
+	{% else %}
+		<meta name="keywords" content="web development, programming, music, politics, skepticism, politics, opinion" />
+	{% endif %}
+
+	<title>Mike Green: {{ page.title }}</title>
 
     <link media="screen, projection" href="stylesheets/screen.css" type="text/css" rel="stylesheet" />
 	<link media="all" href="stylesheets/syntax.css" type="text/css" rel="stylesheet" />
@@ -12,7 +23,6 @@
     <!-- Fonts -->
     <link media="all" href="stylesheets/droid-sans-mono.css" type="text/css" rel="stylesheet" />
     <link media="all" href="stylesheets/vollkorn.css" type="text/css" rel="stylesheet" />
-	<link media="all" href="stylesheets/league-gothic.css" type="text/css" rel="stylesheet" />
     
     <link media="print" href="stylesheets/print.css" type="text/css" rel="stylesheet" />
 

@@ -20,8 +20,7 @@ body.bp
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+  background: $body-bg
   font:
     family: Georgia
 
@@ -30,11 +29,14 @@ body.bp
     
     header
       h1
+        color: $main-header-color
         font:
           family: VollkornBoldItalic 
           size: 36px
 
     #main
+      +border-radius(8px)
+      background: $main-content-bg
       h2
         font:
           family: VollkornItalic
