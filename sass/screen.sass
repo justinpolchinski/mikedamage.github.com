@@ -7,6 +7,8 @@
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding
 
+@import partials/mixins
+
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -23,23 +25,36 @@ body.bp
   background: $body-bg
   font:
     family: Georgia
+    size: 14px
 
   #container
     +container
     
     header
+      margin:
+        bottom: 20px
+        top: 20px
       h1
         color: $main-header-color
         font:
           family: VollkornBoldItalic 
           size: 36px
-
-    #main
-      +border-radius(8px)
-      background: $main-content-bg
-      h2
+        margin:
+          bottom: 0
+      .tagline
+        color: $main-header-color
         font:
           family: VollkornItalic
+          size: 16px
+
+    #main
+      +border-radius(10px)
+      background: $main-content-bg
+      color: $body-bg
+      padding: 15px 20px
+      h2
+        font:
+          family: VollkornBoldItalic
           size: 26px
       h3
         font:
