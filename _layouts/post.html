@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="The personal homepage of Mike Green, aka The Judeo-Piston. Mike is a web developer, programmer, musician, and Renaissance Man. A jack of all trades, master of none." />
-    <meta name="keywords" content="web development, programming, music, politics, skepticism, politics, opinion" />
-    <title>Mike Green, aka The Judeo-Piston: Web Developer, Programmer, Renaissance Man</title>
+
+    {% if page.description %}
+		<meta name="description" content="{{ page.description }}" />
+    {% else %}
+		<meta name="description" content="The personal homepage of Mike Green, aka The Judeo-Piston. Mike is a web developer, programmer, musician, and Renaissance Man. A jack of all trades, master of none." />
+    {% endif %}
+
+	{% if page.keywords %}
+
+	{% else %}
+		<meta name="keywords" content="web development, programming, music, politics, skepticism, politics, opinion" />
+	{% endif %}
+
+	<title>Mike Green: {{ page.title }}</title>
 
     <link media="screen, projection" href="stylesheets/screen.css" type="text/css" rel="stylesheet" />
+	<link media="all" href="stylesheets/syntax.css" type="text/css" rel="stylesheet" />
     
     <!-- Fonts -->
     <link media="all" href="stylesheets/droid-sans-mono.css" type="text/css" rel="stylesheet" />
@@ -18,7 +30,26 @@
     	<link media="screen, projection" href="stylesheets/ie.css" type="text/css" rel="stylesheet" />
     <![endif]-->
 </head>
-<body>
-        
+<body class="bp">
+	
+	<div id="container">
+		<header>
+			<h1>Mike Green</h1>
+			<span class="tagline">Web Developer, Programmer, Musician, Skeptic</span>
+		</header>
+
+		{{ content }}
+		
+		<footer>
+		
+		</footer>
+	</div>
+
+
+	<script type="text/javascript" src="/js/underscore.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/jquery-1.4.4.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/jquery.tmpl.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/main.js" charset="utf-8"></script>
 </body>
 </html>
+
