@@ -4,10 +4,35 @@ title: "Web Developer, Programmer, Musician, Skeptic"
 description: "The personal homepage of Mike Green"
 ---
 
-<div class="home" id="main">
-	<h2>About Me</h2>
+{% include jquery_templates.html %}
 
-	<p>
-		My friends call me Christof; the ladies call me the Judeo-Piston. I'm a web developer, programmer, musician, agnostic, skeptic, and all around Renaissance Man; a jack of all trades, master of none.
-	</p>
+<div class="home" id="main">
+	<div class="content">
+		<h2>About Me</h2>
+
+		<p>
+			My friends call me Christof; the ladies call me the Judeo-Piston. I'm a web developer, programmer, musician, agnostic, skeptic, and all around Renaissance Man; a jack of all trades, master of none&hellip; yet.
+		</p>
+
+		{% if site.posts %}
+		<h2>Blog</h2>
+		
+		<ul id="posts">
+		{% for post in site.posts %}
+			<li>{{ post.title }}</li>
+		{% endfor %}
+		</ul>
+		{% endif %}
+	</div>
+
+	<div class="sidebar">
+		<h2>Twitter Feed</h2>
+		<ul id="twitter" data-pipeurl="http://pipes.yahoo.com/pipes/pipe.run?_id=LjXWaj7o3RG1ZHv6_w6H4A&amp;_render=json&amp;numtweets=3&amp;_callback=?">
+			<li class="loading">Loading</li>
+		</ul>
+	</div>
+
+	<div class="clear"></div>
 </div> 
+
+<!-- vim: set syntax=liquid : -->

@@ -95,8 +95,8 @@ body.bp div.border {
 }
 /* line 48, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 body.bp div.colborder {
-  padding-right: 19px;
-  margin-right: 20px;
+  padding-right: 24px;
+  margin-right: 25px;
   border-right: 1px solid #eeeeee;
 }
 /* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
@@ -139,7 +139,7 @@ body.bp {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333333;
   font-size: 75%;
-  background: #331e0b;
+  background: #382c22;
   font-family: Georgia;
   font-size: 14px;
 }
@@ -445,7 +445,7 @@ body.bp .removed {
 }
 /* line 30, ../sass/screen.sass */
 body.bp #container {
-  width: 800px;
+  width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
@@ -473,24 +473,54 @@ body.bp #container #main {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   background: #f7f4ed;
-  color: #331e0b;
+  color: #382c22;
   padding: 15px 20px;
+  font-family: VollkornRegular;
 }
-/* line 55, ../sass/screen.sass */
-body.bp #container #main h2 {
-  font-family: VollkornBoldItalic;
-  font-size: 26px;
+/* line 57, ../sass/screen.sass */
+body.bp #container #main .content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 630px;
+}
+/* line 139, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.bp #container #main .content {
+  overflow-x: hidden;
 }
 /* line 59, ../sass/screen.sass */
+body.bp #container #main .sidebar {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 230px;
+}
+/* line 139, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.bp #container #main .sidebar {
+  overflow-x: hidden;
+}
+/* line 62, ../sass/screen.sass */
+body.bp #container #main .sidebar h2 {
+  font-family: VollkornBold;
+  font-size: 22px;
+}
+/* line 67, ../sass/screen.sass */
+body.bp #container #main h2 {
+  color: #382c22;
+  font-family: VollkornBoldItalic;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+/* line 74, ../sass/screen.sass */
 body.bp #container #main h3 {
   font-family: VollkornItalic;
   font-size: 18px;
 }
-/* line 64, ../sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 body.bp #container #main div.highlight {
   background: none;
 }
-/* line 67, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 body.bp #container #main div.highlight pre {
   font-family: DroidSansMonoRegular;
   font-size: 14px;
@@ -558,41 +588,41 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 77, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 body.two-col #container {
-  width: 800px;
+  width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 79, ../sass/screen.sass */
+/* line 94, ../sass/screen.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 800px;
+  width: 950px;
 }
 /* line 139, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 81, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 body.two-col #sidebar {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 260px;
+  width: 310px;
 }
 /* line 139, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 85, ../sass/screen.sass */
+/* line 100, ../sass/screen.sass */
 body.two-col #content {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 530px;
+  width: 630px;
 }
 /* line 139, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #content {

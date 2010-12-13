@@ -52,10 +52,25 @@ body.bp
       background: $main-content-bg
       color: $body-bg
       padding: 15px 20px
+      font-family: VollkornRegular
+
+      .content
+        +column(16)
+      .sidebar
+        +column(6, true)
+
+        h2
+          font:
+            family: VollkornBold
+            size: 22px
+
       h2
+        color: $body-bg
         font:
           family: VollkornBoldItalic
           size: 26px
+        margin:
+          bottom: 10px
       h3
         font:
           family: VollkornItalic
