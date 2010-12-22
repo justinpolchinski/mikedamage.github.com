@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Inaugural Post
-categories:
+tags:
   - test
   - misc
 ---
 
 # My Very First Post {: #post_title}
+
+
