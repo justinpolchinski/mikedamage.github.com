@@ -22,10 +22,11 @@ body.bp
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
+  +raleway-font
   background: $body-bg
   font:
-    family: "Helvetica Neue", Helvetica, Arial, sans-serif 
     size: 14px
+    family: $helvetica
 
   #container
     +container
@@ -37,22 +38,22 @@ body.bp
       h1
         color: $main-header-color
         font:
-          family: RalewayThin 
+          family: $raleway 
           size: 36px
         margin:
           bottom: 0
       .tagline
         color: $main-header-color
         font:
-          family: RalewayThin 
+          family: $raleway
           size: 16px
 
     #main
       +border-radius(10px)
+      +raleway-font
       background: $main-content-bg
       color: $body-bg
       padding: 15px 20px
-      font-family: RalewayThin 
 
       .content
         +column(16)
@@ -61,19 +62,19 @@ body.bp
 
         h2
           font:
-            family: RalewayThin 
+            family: $raleway
             size: 22px
 
       h2
         color: $body-bg
         font:
-          family: RalewayThin 
+          family: $raleway
           size: 26px
         margin:
           bottom: 10px
       h3
         font:
-          family: RalewayThin
+          family: $raleway
           size: 18px
 
       div.highlight
@@ -81,7 +82,7 @@ body.bp
 
         pre
           font:
-            family: LiberationMonoRegular
+            family: $mono
             size: 14px
     
 form.bp
