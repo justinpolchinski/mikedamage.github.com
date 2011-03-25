@@ -473,7 +473,7 @@ body.bp #container header .tagline {
 body.bp #container #main {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #f7f4ed;
   color: #382c22;
   padding: 15px 20px;
