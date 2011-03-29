@@ -1,0 +1,29 @@
+// Mike Green: Personal Homepage
+// Sass Mix-ins File
+
+@mixin border-radius($px) {
+  -moz-border-radius: $px;
+  -webkit-border-radius: $px; }
+
+@mixin box-shadow($x, $y, $spread, $color) {
+  -webkit-box-shadow: $x $y $spread $color;
+  -moz-box-shadow: $x $y $spread $color;
+  box-shadow: $x $y $spread $color; }
+
+@mixin raleway-font {
+  font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+@mixin sans-fonts {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+@mixin sans-thin($size) {
+  font: {
+    family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    weight: 100;
+    size: $size; }; }
+
+@mixin sans-thick($size, $spacing) {
+  font: {
+    family: Helvetica, Arial, sans-serif;
+    weight: bold; };
+  letter-spacing: $spacing; }
