@@ -81,6 +81,11 @@ a img {
   border: none;
 }
 
+/* line 23, ../sass/screen.scss */
+html {
+  height: 100%;
+}
+
 /* line 41, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 body.bp .box {
   padding: 1.5em;
@@ -133,17 +138,20 @@ body.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 20, ../sass/screen.sass */
+/* line 28, ../sass/screen.scss */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333333;
   font-size: 75%;
   font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: white;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #87b0bd), color-stop(100%, #ffffff));
+  background-image: -moz-linear-gradient(bottom, #87b0bd 0%, #ffffff 100%);
+  background-image: linear-gradient(bottom, #87b0bd 0%, #ffffff 100%);
   font-size: 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
+  height: 100%;
 }
 /* line 65, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {
@@ -445,36 +453,38 @@ body.bp .removed {
   background: #990000;
   color: white;
 }
-/* line 32, ../sass/screen.sass */
+/* line 40, ../sass/screen.scss */
 body.bp #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 35, ../sass/screen.sass */
+/* line 42, ../sass/screen.scss */
 body.bp #container header {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* line 39, ../sass/screen.sass */
+/* line 46, ../sass/screen.scss */
 body.bp #container header h1 {
-  font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 36px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
   margin-bottom: 0;
 }
-/* line 45, ../sass/screen.sass */
+/* line 50, ../sass/screen.scss */
 body.bp #container header .tagline {
-  font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 24px;
 }
-/* line 50, ../sass/screen.sass */
+/* line 52, ../sass/screen.scss */
 body.bp #container #main {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 54, ../sass/screen.sass */
+/* line 55, ../sass/screen.scss */
 body.bp #container #main .content {
   display: inline;
   float: left;
@@ -485,7 +495,7 @@ body.bp #container #main .content {
 * html body.bp #container #main .content {
   overflow-x: hidden;
 }
-/* line 56, ../sass/screen.sass */
+/* line 57, ../sass/screen.scss */
 body.bp #container #main .sidebar {
   display: inline;
   float: left;
@@ -496,27 +506,30 @@ body.bp #container #main .sidebar {
 * html body.bp #container #main .sidebar {
   overflow-x: hidden;
 }
-/* line 59, ../sass/screen.sass */
+/* line 59, ../sass/screen.scss */
 body.bp #container #main .sidebar h2 {
-  font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 22px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 24px;
 }
-/* line 64, ../sass/screen.sass */
+/* line 61, ../sass/screen.scss */
 body.bp #container #main h2 {
-  font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 26px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
   margin-bottom: 10px;
 }
-/* line 70, ../sass/screen.sass */
+/* line 65, ../sass/screen.scss */
 body.bp #container #main h3 {
-  font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   font-size: 18px;
 }
-/* line 75, ../sass/screen.sass */
+/* line 67, ../sass/screen.scss */
 body.bp #container #main div.highlight {
   background: none;
 }
-/* line 78, ../sass/screen.sass */
+/* line 69, ../sass/screen.scss */
 body.bp #container #main div.highlight pre {
   font-family: LiberationMonoRegular, Menlo, Courier, monospace;
   font-size: 14px;
@@ -584,14 +597,14 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 88, ../sass/screen.sass */
+/* line 79, ../sass/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 90, ../sass/screen.sass */
+/* line 81, ../sass/screen.scss */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -602,7 +615,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 92, ../sass/screen.sass */
+/* line 83, ../sass/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -613,7 +626,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 96, ../sass/screen.sass */
+/* line 87, ../sass/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;
