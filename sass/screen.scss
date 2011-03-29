@@ -31,7 +31,7 @@ body.bp {
   @include blueprint-debug;
   @include blueprint-interaction;
   @include raleway-font;
-  @include linear-gradient(color-stops(#87b0bd, white), bottom);
+  @include linear-gradient(color-stops(#87B0BD, white), bottom);
   font: {
     size: 14px;
     family: $helvetica; };
