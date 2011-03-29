@@ -27,6 +27,7 @@ body.bp
   font:
     size: 14px
     family: $helvetica
+  color: #000
 
   #container
     +container
@@ -36,14 +37,12 @@ body.bp
         bottom: 20px
         top: 20px
       h1
-        color: $main-header-color
         font:
           family: $raleway 
           size: 36px
         margin:
           bottom: 0
       .tagline
-        color: $main-header-color
         font:
           family: $raleway
           size: 16px
@@ -51,9 +50,6 @@ body.bp
     #main
       +border-radius(10px)
       +sans-fonts
-      background: $main-content-bg
-      color: $body-bg
-      padding: 15px 20px
 
       .content
         +column(16)
@@ -66,7 +62,6 @@ body.bp
             size: 22px
 
       h2
-        color: $body-bg
         font:
           family: $raleway
           size: 26px
