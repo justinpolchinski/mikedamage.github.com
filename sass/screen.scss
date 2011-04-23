@@ -20,8 +20,6 @@
 // But Compass recommends that you scope your blueprint styles
 // So that you can better control what pages use blueprint
 // when stylesheets are concatenated together.
-html {
-  height: 100%; }
 
 @include blueprint-scaffolding("body.bp");
 
@@ -31,12 +29,16 @@ body.bp {
   @include blueprint-debug;
   @include blueprint-interaction;
   @include raleway-font;
-  @include linear-gradient(color-stops(#87B0BD, white), bottom);
+  //@include linear-gradient(color-stops(#87B0BD, white), bottom);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(80%, #87b0bd)) fixed;
   font: {
     size: 14px;
     family: $helvetica; };
   color: black;
   height: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+
   #container {
     @include container;
     header {
@@ -57,7 +59,7 @@ body.bp {
       .sidebar {
         @include column(6, true);
         h2 {
-          @include sans-thin(24px); } }
+          @include sans-thick(24px, -1px); } }
       h2 {
         @include sans-thick(24px, -1px);
         margin: {
