@@ -10,9 +10,6 @@
   -moz-box-shadow: $x $y $spread $color;
   box-shadow: $x $y $spread $color; }
 
-@mixin raleway-font {
-  font-family: RalewayThin, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
 @mixin sans-fonts {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
