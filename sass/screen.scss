@@ -34,7 +34,8 @@ body.bp {
 	background: #f4f4f4;
   font: {
     size: 14px;
-    family: $helvetica; };
+		family: $helvetica;
+	};
   color: black;
   height: 100%;
   background-repeat: no-repeat;
@@ -44,11 +45,11 @@ body.bp {
 		width: 100%;
 		margin: {
 			bottom: 10px;
-		}
+		};
 		padding: {
 			top: 20px;
 			bottom: 20px;
-		}
+		};
 		border-bottom: 1px solid #b3b3b3;
 		@include background-image(linear-gradient(#f4f4f4, #dbdbdb));
 
@@ -56,14 +57,24 @@ body.bp {
 			@include container;
 
 			h1 {
-				@include sans-thick(36px, -2px);
+				@include text-shadow(#fff 1px 1px 0);
+				font: {
+					family: 'YanoneKaffeesatz';
+					weight: 400;
+					size: 48px;
+				};
 				margin: {
 					bottom: 0;
-				}
+				};
 			}
 
 			.tagline {
-				@include sans-thin(20px);
+				@include text-shadow(#fff 1px 1px 0);
+				font: {
+					family: 'YanoneKaffeesatz';
+					weight: 200;
+					size: 20px;
+				};
 			}
 		}
   }
@@ -75,23 +86,45 @@ body.bp {
       @include border-radius(10px);
       @include sans-fonts;
       .content {
-        @include column(16); }
+        @include column(16); 
+			}
       .sidebar {
         @include column(6, true);
         h2 {
-          @include sans-thick(24px, -1px); } }
+					@include text-shadow(#fff 1px 1px 0);
+					font: {
+						family: 'YanoneKaffeesatz';
+						size: 36px;
+						weight: 400;
+					};
+				} 
+			}
       h2 {
-        @include sans-thick(24px, -1px);
+				@include text-shadow(#fff 1px 1px 0);
+				font: {
+					family: 'YanoneKaffeesatz';
+					size: 36px;
+					weight: 400;
+				}
         margin: {
-          bottom: 10px; }; }
+          bottom: 10px; 
+				};
+			}
       h3 {
-        @include sans-thin(18px); }
+        @include sans-thin(18px);
+			}
       div.highlight {
         background: none;
         pre {
           font: {
             family: $mono;
-            size: 14px; }; } } } } }
+            size: 14px;
+					};
+				} 
+			} 
+		} 
+	}
+}
 
 form.bp {
   @include blueprint-form; }
