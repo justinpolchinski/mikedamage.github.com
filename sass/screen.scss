@@ -1,5 +1,7 @@
 // This import applies a global reset to any page that imports this stylesheet.
 @import "compass";
+@import "compass/css3/images";
+
 @import "blueprint/reset";
 
 // To configure blueprint, edit the partials/base.sass file.
@@ -21,16 +23,16 @@
 // So that you can better control what pages use blueprint
 // when stylesheets are concatenated together.
 
-@include blueprint-scaffolding("body.bp");
 
 body.bp {
+	@include blueprint-scaffolding;
   @include blueprint-typography(true);
   @include blueprint-utilities;
   @include blueprint-debug;
   @include blueprint-interaction;
   @include raleway-font;
-  //@include linear-gradient(color-stops(#87B0BD, white), bottom);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(80%, #87b0bd)) fixed;
+
+	background: #f4f4f4;
   font: {
     size: 14px;
     family: $helvetica; };
@@ -39,18 +41,37 @@ body.bp {
   background-repeat: no-repeat;
   margin: 0;
 
+  header {
+		width: 100%;
+		margin: {
+			bottom: 10px;
+		}
+		padding: {
+			top: 20px;
+			bottom: 20px;
+		}
+		border-bottom: 1px solid #b3b3b3;
+		@include background-image(linear-gradient(#f4f4f4, #dbdbdb));
+
+		.container {
+			@include container;
+
+			h1 {
+				@include sans-thick(36px, -2px);
+				margin: {
+					bottom: 0;
+				}
+			}
+
+			.tagline {
+				@include sans-thin(20px);
+			}
+		}
+  }
+
   #container {
     @include container;
-    header {
-      margin: {
-        bottom: 20px;
-        top: 20px; };
-      h1 {
-        @include sans-thick(36px, -2px);
-        margin: {
-          bottom: 0; }; }
-      .tagline {
-        @include sans-thin(24px); } }
+
     #main {
       @include border-radius(10px);
       @include sans-fonts;
