@@ -464,27 +464,32 @@ body.bp header .container h1 {
   font-size: 48px;
   margin-bottom: 0;
 }
-/* line 71, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
+body.bp header .container h1 a {
+  text-decoration: none;
+  color: black;
+}
+/* line 76, ../sass/screen.scss */
 body.bp header .container .tagline {
   text-shadow: white 1px 1px 0;
   font-family: 'YanoneKaffeesatz';
   font-weight: 200;
   font-size: 20px;
 }
-/* line 82, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 body.bp #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 85, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 body.bp #container #main {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 88, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 body.bp #container #main .content {
   display: inline;
   float: left;
@@ -495,7 +500,7 @@ body.bp #container #main .content {
 * html body.bp #container #main .content {
   overflow-x: hidden;
 }
-/* line 91, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 body.bp #container #main .sidebar {
   display: inline;
   float: left;
@@ -506,14 +511,14 @@ body.bp #container #main .sidebar {
 * html body.bp #container #main .sidebar {
   overflow-x: hidden;
 }
-/* line 93, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 body.bp #container #main .sidebar h2 {
   text-shadow: white 1px 1px 0;
   font-family: 'YanoneKaffeesatz';
   font-size: 36px;
   font-weight: 400;
 }
-/* line 102, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 body.bp #container #main h2 {
   text-shadow: white 1px 1px 0;
   font-family: 'YanoneKaffeesatz';
@@ -521,17 +526,17 @@ body.bp #container #main h2 {
   font-weight: 400;
   margin-bottom: 10px;
 }
-/* line 113, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 body.bp #container #main h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 18px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 body.bp #container #main div.highlight {
   background: none;
 }
-/* line 118, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 body.bp #container #main div.highlight pre {
   font-family: LiberationMonoRegular, Menlo, Courier, monospace;
   font-size: 14px;
@@ -601,14 +606,14 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 136, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -619,7 +624,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 138, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -630,7 +635,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 142, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;

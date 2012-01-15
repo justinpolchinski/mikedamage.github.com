@@ -66,6 +66,11 @@ body.bp {
 				margin: {
 					bottom: 0;
 				};
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
 			}
 
 			.tagline {
@@ -145,3 +150,5 @@ body.two-col {
     $content-columns: ceil(2 * $blueprint-grid-columns / 3);
     // true means it's the last column in the row
     @include column($content-columns, true); } }
+
+// vim: set ts=2 sw=2 expandtab :
