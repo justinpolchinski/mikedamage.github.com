@@ -11,7 +11,7 @@ description: "The personal homepage of Mike Green"
 		<h2>About Me</h2>
 
 		<p>
-			My friends call me Christof; the ladies call me the Judeo-Piston. I like to take things apart and sometimes put them back together. I'm the resident developer at <a href="http://www.fifthroomcreative.com/" target="_blank">Fifth Room Creative</a>.
+			My friends call me Christof; the ladies call me the Judeo-Piston. I like to take things apart and sometimes put them back together. I'm a Senior Web Developer at <a href="http://www.fifthroomcreative.com/" target="_blank">Fifth Room Creative</a>.
 		</p>
 
 		<p>
@@ -49,11 +49,8 @@ description: "The personal homepage of Mike Green"
 
 	<div class="sidebar">
 		<h2>Twitter Feed</h2>
-		<a href="https://twitter.com/mikedamage" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mikedamage</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		<ul id="twitter" data-pipeurl="http://pipes.yahoo.com/pipes/pipe.run?_id=LjXWaj7o3RG1ZHv6_w6H4A&amp;_render=json&amp;numtweets=3&amp;_callback=?">
-			<li class="loading">Loading</li>
-		</ul>
+		{% include twitter_widget.html %}
+		{% include follow_button.html %}
 	</div>
 
 	<div class="clear"></div>
